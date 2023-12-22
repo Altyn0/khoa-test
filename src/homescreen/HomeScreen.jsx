@@ -64,9 +64,9 @@ const HomeScreen = () => {
                 title={quote.content}
                 description={
                   <div>
-                    <span onClick={() => handleAuthorQuotes(quote.author)}>
+                    <button className='btn-name' onClick={() => handleAuthorQuotes(quote.author)}>
                       {quote.author}
-                    </span>
+                    </button>
                     <br />
                     {quote.tags && (
                       <div>
